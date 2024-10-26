@@ -6,10 +6,9 @@ import { Filter } from "../_components/Filter";
 export const metadata = {
   title: "Cabins :",
 };
-
+export const revalidate = 0;
 export default function Page({ searchParams }) {
   const filter = searchParams?.capacity ?? "all";
-  // noStore();
   return (
     <div>
       <h1 className="text-4xl mb-5 text-accent-400 font-medium">

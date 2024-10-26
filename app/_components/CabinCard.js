@@ -1,12 +1,9 @@
 import { UsersIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
-// import { unstable_noStore as noStore } from "next/cache";
 
 function CabinCard({ cabin }) {
-  // noStore();
   const { id, name, maxCapacity, regularPrice, discount, img } = cabin;
-  // console.log(img);
 
   return (
     <div className="flex border-primary-800 border">
